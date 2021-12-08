@@ -17,7 +17,8 @@ export class CadastrarFolhaComponent implements OnInit {
   ano!: string;
   funcionario!: Funcionario[];
   funcionarioId!: number;
-
+  msgError!: any;  
+  
   constructor(
       private folhaService: FolhaService,
       private service: FuncionarioService,
@@ -41,7 +42,12 @@ export class CadastrarFolhaComponent implements OnInit {
       };
       this.folhaService.create(folha).subscribe((folha) => {
           this.router.navigate(["folha/listar"]);
-      });
+      },(error) => {
+        this.msgError = error.error;
+        setTimeout(() => {
+            this.msgError = null;
+        }, 6000);
+    });
     
   }
 }
