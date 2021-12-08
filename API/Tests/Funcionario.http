@@ -1,0 +1,11 @@
+### Cadastrar usuário
+POST https://localhost:5001/api/funcionario/create
+Content-Type: application/json
+
+{
+    "Nome" : "caioroque",
+    "CPF" : "123"
+}
+
+### Listar funcionario
+GET https://localhost:5001/api/funcionario/list

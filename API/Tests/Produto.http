@@ -1,0 +1,5 @@
+### Deletar produto pelo nome
+DELETE http://localhost:5000/api/compromisso/delete/OLGA ROQUE DA SILVA
+
+### Deletar produto pelo Id
+GET https://localhost:5001/api/folha/list

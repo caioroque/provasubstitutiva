@@ -1,0 +1,13 @@
+### Cadastrar importancia
+POST https://localhost:5001/api/importancia/create
+Content-Type: application/json
+
+{
+    "Nome" : "Urgente"
+}
+
+### Listar categorias
+GET https://localhost:5001/api/importancia/list
+
+### Listar categorias
+DELETE http://localhost:5000/api/importancia/deleteById/4
